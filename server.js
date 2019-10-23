@@ -19,3 +19,6 @@ function auth(user, pass) {
 
     return false;
 }
+
+
+app.listen(port, () => console.log(`listening on port ${port}!`))
