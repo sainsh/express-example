@@ -3,7 +3,15 @@ extends layout
 block content
   h1= title
   h2 #{besked}
+  p Denne side har også et API
+  p For at bruge det kan du sende requests til siden "/api/beers/"
+  p For at hente alle øl: send en GET request til "/api/beers"
+  p For at tilføje en øl: send en POST request til "/api/beers" med et JSON objekt på denne form {"navn": "navn", "smag": "smag", "vol": "vol", "img": "/images/(navn).jpg"} (billede vil blive fundet senere)
+  p For at hente en bestemt øl: send en GET request med id til "/api/beers/:id"
+  p For at ændre en øl: send en PUT request med id til "/api/beers/:id" med hele JSON objektet
+  P For at fjerne en øl: send en DELETE request med id til "/api/beers/:id"
   img(src=img)
+
   br
   a(href=oel) Her finder du øllene
   br
