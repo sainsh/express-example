@@ -1,10 +1,25 @@
 extends layout
 
 block content
+  a(href="/") forsiden
   h1= title
   p velkommen til #{title}
+
   h2 liste over Øl
-  ul
-    li #{oel1}
-    li #{oel2}
-    li #{oel3}
+  div
+    table 
+      thead 
+        tr
+          th navn
+          th smag
+          th vol
+          th billede
+      tbody
+        each thing in oel
+          tr
+            td #{thing.navn}
+            td #{thing.smag}
+            td #{thing.vol}
+            td 
+              img(src=thing.img, style="height:150px")
+      

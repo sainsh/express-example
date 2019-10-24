@@ -1,0 +1,20 @@
+ [
+        {
+            "navn": "hobgoblin",
+            "smag": "rugbrød",
+            "vol": "5.4",
+            "img": "/images/hobgoblin.jpg"
+        },
+        {
+            "navn": "black wych",
+            "smag": "rugbrød plus bær",
+            "vol": "5.0",
+            "img": "/images/blackwych.jpg"
+        },
+        {
+            "navn": "gingerbeard",
+            "smag": "ingefær",
+            "vol": "4.2",
+            "img": "/images/gingerbeard.jpg"
+        }
+]
